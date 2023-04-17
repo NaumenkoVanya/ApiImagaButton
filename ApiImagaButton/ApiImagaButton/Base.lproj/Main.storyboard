@@ -16,13 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="OIZ-4G-NZQ">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="OIZ-4G-NZQ">
                                 <rect key="frame" x="16" y="59" width="361" height="710.33333333333337"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dwa-JY-T49">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dwa-JY-T49">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="556"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMK-0P-KgM">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMK-0P-KgM">
                                         <rect key="frame" x="0.0" y="676" width="361" height="34.333333333333371"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <state key="normal" title="Button"/>
@@ -34,10 +34,20 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="710.33000000000004" id="3Ov-hq-jzc"/>
+                                    <constraint firstAttribute="width" constant="361" id="QaH-U0-9HQ"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OIZ-4G-NZQ" secondAttribute="bottom" constant="48.670000000000002" id="60Q-fw-dgO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OIZ-4G-NZQ" secondAttribute="trailing" constant="16" id="QsJ-zz-5e8"/>
+                            <constraint firstItem="OIZ-4G-NZQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qx6-jk-L6E"/>
+                            <constraint firstItem="OIZ-4G-NZQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SUv-Bq-vOx"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageImage" destination="Dwa-JY-T49" id="KfW-7A-nVs"/>
